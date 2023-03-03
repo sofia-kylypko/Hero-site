@@ -56,11 +56,12 @@ header #logo{
     margin-left: 20px;
 
     font-size: 35px;
+    width: 250px;
 }
 
 header nav{
     margin: auto 40px 0 auto ;
-    width: 700px;
+    width: 60%;
 }
 
 header nav ul{
@@ -78,6 +79,10 @@ header nav ul .vertical_line{
     border-left: 2px solid #091531;
 }
 
+header nav ul li a {
+    color: #091531;
+}
+
 /*--------------Main--------------*/
 main .underTop{
     width: 100%;
@@ -86,46 +91,51 @@ main .underTop{
 
 main .pageContent{
     width: 60%;
-    height: 20px;
-
+    height: 30px;
     background-color: #091531;
-
     border-radius: 0 0 30px 30px;
-
     margin: 0 auto 20px auto;
-    
     display: flex;
-
-    color: aliceblue;
-
     position: relative;
     z-index:2;
 }
 
 main .pageContent p{
-    display: inline;
+    font-size: larger;
     margin: auto;
+}
+
+.pageContent p a{
+    color: aliceblue;
+    display: block;
+}
+.pageContent p a:hover{
+    color: aqua;
 }
 
 main .slidebar{
     width: 100%;
-    height: 400px;
-
-    background-color: rgba(176, 196, 222, 0.5);
-
-    margin: -40px auto 0 -8px;
-    padding: 200px 9px 0 8px;
+    margin: -50px auto 0 auto;
 
     position: relative;
     z-index:1;
+    text-align: left;
 }
-
-main .slidebar h1{
-    text-align: center;
-    font-size: 70px;
+main .slidebar img {
+    width: 100%;
+    opacity: 0.7;
 }
-
+main .slidebar p {
+    margin: -40px 0 0 15px;
+}
+main .slidebar p a {
+    color: aliceblue;
+    text-decoration: underline;
+    font-size: larger;
+    position: relative;
+}
 main .whatAbout{
+    margin-top: 75px;
     width: 100%;
     height: 300px;
 }
@@ -144,9 +154,9 @@ main .whatAbout blockquote{
     color: aliceblue;
 
     text-align: right;
-
-    height: 200px;
-    width: 50%;
+    height: 300px;
+    max-width: 70%;
+    min-width: 50%;
 
     margin: -270px 20px 0 auto;
 
@@ -166,12 +176,15 @@ main .shortAbout{
 
     padding: 30px 0 30px 0;
 
-    margin: 30px auto 30px auto;
+    margin: 75px auto 30px auto;
+}
+
+main .shortAbout iframe {
+    opacity: 0.8;
 }
 
 main .shortAbout .text{
     width: 50%;
-    height: 365px;
 
     background-color: rgba(176, 196, 222, 0.2);
 
@@ -182,13 +195,12 @@ main .shortAbout .text{
 }
 
 main .shortAbout .text p{
-    margin: 40px;
+    margin: 20px;
 }
 
 main .whyHim{
     background-color: rgba(195, 218, 249, 0.9);
 
-    height: 500px;
     width: 75%;
 
     margin: 30px auto 30px auto;
@@ -205,15 +217,29 @@ main .whyHim p{
     font-size: x-large;
     text-align: center;
 
-    margin: auto 40px auto 40px;
+    margin: auto 40px 40px 40px;
 }
 
 /*--------------Footer--------------*/
 footer{
     background-color: rgba(176, 196, 222, 0.2);
 
-    height: 100px;
     width: 100%;
 
     margin: 30px auto 0 auto;
+    padding: 20px auto 20px auto;
+
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p a{
+    color: aliceblue;
+    text-decoration: none;
+} 
+
+footer p a:hover {
+    color: aqua;
 }
