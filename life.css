@@ -6,19 +6,75 @@ main .pageContentLight {
     margin: 2px auto 20px auto;
     display: flex;
 }
+
 main .pageContentLight p {
     font-size: larger;
     margin: auto;
 }
+
 .pageContentLight p a {
     color: #091531;
     display: block;
 }
+
 .pageContentLight p a:hover {
     color: aliceblue;
 }
+
 .pageContentLight p .activeLink {
-    color:aliceblue;
+    color:rgb(95, 137, 171);
 }
 
+main .card {
+    margin: auto;
+    width: 95%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(176, 196, 222, 0.7);
+    text-align: center;
+}
 
+main .card img {
+    height: 500px;
+}
+main  img {
+    opacity: 0.8;
+}
+
+main .card p {
+    font-size: larger;
+}
+
+main .early {
+    color: aliceblue;
+    background-color: rgba(176, 196, 222, 0.2);
+    width: 78%;
+    margin: 30px auto auto auto;
+    padding: 15px 40px 20px 40px ;
+}
+
+main .early h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main .early p {
+    font-size:22px;
+    line-height: 1.9rem;
+    text-indent: 4rem;
+}
+
+main .early p span {
+    color: rgb(222, 180, 138);
+}
+
+main .early img {
+    height: 370px;
+    margin: 50px auto 30px 20px;
+}
+
+main .early div {
+    display: flex;
+    justify-content: space-between;
+}

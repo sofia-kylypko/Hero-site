@@ -3,77 +3,71 @@
     src: url(fonts/EyadAl-Samman-Ghibli.ttf);
 }
 
-body{
+body {
     background-color: #091531;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;  
 }
 
-a:hover{
+a:hover {
     color: aliceblue;
 }
 
-.activeLink{
-    color: aliceblue;
+.activeLink {
+    color: rgb(95, 137, 171);
 }
 
-.source{
+.source {
     text-decoration: underline;
-
     font-size: 20px;
     color: aliceblue;
 }
 
-.source:hover{
+.source:hover {
     color: #3DF0F5;
 }
 
 /*--------------Header--------------*/
 
-header{
+header {
     background-color: #3DF0F5;
     height: 75px;
     width: 100%;
     margin: -23px -9px 0 -8px;
     padding: 10px ;
-
     display: flex;
-    
     position: relative;
     z-index:3;
-    
     position: fixed;
 }
 
-header h1 a{
+header h1 a {
     color: #091531;
 }
 
-header #logo{
+header #logo {
     margin-left: 20px;
-
     font-size: 35px;
     width: 250px;
 }
 
-header nav{
+header nav {
     margin: auto 40px 0 auto ;
     width: 60%;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
     font-size: larger;
     color: aliceblue;
-
     display: flex;
     justify-content: space-around;
 }
 
-header nav ul .vertical_line{
+header nav ul .vertical_line {
     margin-top: 3px;
     height: 15px;
     border-left: 2px solid #091531;
@@ -84,12 +78,12 @@ header nav ul li a {
 }
 
 /*--------------Main--------------*/
-main .underTop{
+main .underTop {
     width: 100%;
     height: 72px;
 }
 
-main .pageContent{
+main .pageContent {
     width: 60%;
     height: 30px;
     background-color: #091531;
@@ -100,82 +94,77 @@ main .pageContent{
     z-index:2;
 }
 
-main .pageContent p{
+main .pageContent p {
     font-size: larger;
     margin: auto;
 }
 
-.pageContent p a{
+.pageContent p a {
     color: aliceblue;
     display: block;
 }
-.pageContent p a:hover{
+.pageContent p a:hover {
     color: aqua;
 }
 
-main .slidebar{
+main .slidebar {
     width: 100%;
     margin: -50px auto 0 auto;
-
     position: relative;
     z-index:1;
     text-align: left;
 }
+
 main .slidebar img {
     width: 100%;
     opacity: 0.7;
 }
+
 main .slidebar p {
     margin: -40px 0 0 15px;
 }
+
 main .slidebar p a {
     color: aliceblue;
     text-decoration: underline;
     font-size: larger;
     position: relative;
 }
-main .whatAbout{
+
+main .whatAbout {
     margin-top: 75px;
     width: 100%;
     height: 300px;
 }
 
-main .whatAbout img{
+main .whatAbout img {
     width: 101%;
     height: 300px;
-
     opacity: 0.65;
-
     margin: 0 0 0 -10px;
 }
 
-main .whatAbout blockquote{
+main .whatAbout blockquote {
     font-size: xx-large;
     color: aliceblue;
-
     text-align: right;
     height: 300px;
     max-width: 70%;
     min-width: 50%;
-
     margin: -270px 20px 0 auto;
-
     position: relative;
     z-index:1;
 }
 
-main .whatAbout blockquote p{
+main .whatAbout blockquote p {
     margin-top: 0;
 }
 
-main .shortAbout{
+main .shortAbout {
     background-color: rgba(176, 196, 222, 0.2);
-
     display: flex;
     justify-content: space-around;
-
     padding: 30px 0 30px 0;
-
     margin: 75px auto 30px auto;
 }
 
@@ -183,63 +172,82 @@ main .shortAbout iframe {
     opacity: 0.8;
 }
 
-main .shortAbout .text{
+main .shortAbout .text {
     width: 50%;
-
     background-color: rgba(176, 196, 222, 0.2);
-
     color: aliceblue;
-
     font-size: xx-large;
     text-align: left;
 }
 
-main .shortAbout .text p{
+main .shortAbout .text p {
     margin: 20px;
 }
 
-main .whyHim{
+main .whyHim {
     background-color: rgba(195, 218, 249, 0.9);
-
     width: 75%;
-
     margin: 30px auto 30px auto;
-
     padding: 50px;
 }
 
-main .whyHim h1{
+main .whyHim h1 {
     font-size: 40px;
     text-align: center;
 }
 
-main .whyHim p{
+main .whyHim p {
     font-size: x-large;
     text-align: center;
-
     margin: auto 40px 40px 40px;
 }
 
 /*--------------Footer--------------*/
-footer{
+footer {
     background-color: rgba(176, 196, 222, 0.2);
-
     width: 100%;
-
     margin: 30px auto 0 auto;
     padding: 20px auto 20px auto;
-
     color: aliceblue;
     font-size: larger;
     display: flex;
     justify-content: space-around;
 }
 
-footer p a{
+footer p a {
     color: aliceblue;
     text-decoration: none;
 } 
 
 footer p a:hover {
     color: aqua;
+}
+
+
+/*--------------Author--------------*/
+main .authorInfo {
+    width: 85%;
+    margin: 20px auto auto;
+    background-color: rgba(176, 196, 222, 0.3);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+main .authorInfo img {
+    height: 700px;
+}
+
+main .authorInfo div {
+    width:58%;
+    background-color: rgba(176, 196, 222, 0.6);
+    color: #091531;
+    padding-top: 50px;
+}
+
+main .authorInfo div p {
+    font-size: x-large;
+    margin: 40px 35px auto 35px;
 }
