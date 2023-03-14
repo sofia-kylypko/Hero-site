@@ -27,8 +27,9 @@ main .pageContentLight p {
 
 main .card {
     margin: auto;
-    width: 95%;
+    min-width: 95%;
     height: 500px;
+    display: grid;
     display: flex;
     justify-content: space-between;
     background-color: rgba(176, 196, 222, 0.7);
@@ -38,15 +39,17 @@ main .card {
 main .card img {
     height: 500px;
 }
+
 main  img {
     opacity: 0.8;
 }
 
 main .card p {
     font-size: larger;
+    min-width: 250px;
 }
 
-main .early {
+main .info {
     color: aliceblue;
     background-color: rgba(176, 196, 222, 0.2);
     width: 78%;
@@ -54,27 +57,26 @@ main .early {
     padding: 15px 40px 20px 40px ;
 }
 
-main .early h1 {
+main .info h1 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-main .early p {
+main .info p {
     font-size:22px;
     line-height: 1.9rem;
     text-indent: 4rem;
 }
 
-main .early p span {
+main .info p span {
     color: rgb(222, 180, 138);
 }
 
-main .early img {
-    height: 370px;
-    margin: 50px auto 30px 20px;
-}
+main .info p a {
+    color: aliceblue;
+    text-decoration: underline;
+}  
 
-main .early div {
-    display: flex;
-    justify-content: space-between;
+main .info p a:hover {
+    color: aqua;
 }
