@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+body p {
+    font-size: 11pt;
+}
+
 a {
     text-decoration: none;  
 }
@@ -48,7 +52,7 @@ header h1 a {
     color: #091531;
 }
 
-header #logo {
+header h1 {
     margin-left: 20px;
     font-size: 35px;
     width: 250px;
@@ -57,6 +61,7 @@ header #logo {
 header nav {
     margin: auto 40px 0 auto ;
     width: 60%;
+    height: auto;
 }
 
 header nav ul {
@@ -120,19 +125,8 @@ main .slidebar img {
     opacity: 0.7;
 }
 
-main .slidebar p {
-    margin: -40px 0 0 15px;
-}
-
-main .slidebar p a {
-    color: aliceblue;
-    text-decoration: underline;
-    font-size: larger;
-    position: relative;
-}
-
 main .whatAbout {
-    margin-top: 75px;
+    margin-top: 65px;
     width: 100%;
     height: 300px;
 }
@@ -162,26 +156,23 @@ main .whatAbout blockquote p {
 
 main .shortAbout {
     background-color: rgba(176, 196, 222, 0.2);
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 0 30px 0;
+    padding: 30px;
     margin: 75px auto 30px auto;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
 }
 
 main .shortAbout iframe {
     opacity: 0.8;
 }
 
-main .shortAbout .text {
-    width: 50%;
-    background-color: rgba(176, 196, 222, 0.2);
-    color: aliceblue;
-    font-size: xx-large;
-    text-align: left;
-}
-
 main .shortAbout .text p {
-    margin: 20px;
+    background-color: rgba(176, 196, 222, 0.2);
+    padding: 40px;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
 }
 
 main .whyHim {
@@ -223,7 +214,6 @@ footer p a:hover {
     color: aqua;
 }
 
-
 /*--------------Author--------------*/
 main .authorInfo {
     width: 85%;
@@ -251,3 +241,93 @@ main .authorInfo div p {
     font-size: x-large;
     margin: 40px 35px auto 35px;
 }
+
+@media screen and (min-width: 200px) and (max-width:1350px){
+    main .authorInfo {
+        display: block;
+    }
+    main .authorInfo div {
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    main .authorInfo img {
+        height: 500px;
+    }
+}
+
+/*--------------VIEW--------------*/
+
+@media screen and (min-width: 200px) and (max-width:750px){
+    header {
+        height: 55px;
+    }
+    header h1 {
+        font-size: 25px !important;
+        margin-top: 20px;
+    }
+    header nav {
+        width: 70%;
+        font-size: smaller !important;
+        margin: 10px 40px 0 auto !important;
+    }
+    main .pageContent {
+        font-size: small !important;
+        margin-top: -20px;
+    }
+    .whatAbout blockquote {
+        font-size: large !important;
+    }
+    .whatAbout a {
+        font-size: small !important;
+    }
+    main .shortAbout .text p {
+        font-size: medium !important;
+    }
+    main .shortAbout .text a {
+        font-size: small !important;
+    }
+    .whyHim {
+        padding: 20px !important;
+    }
+    .whyHim h1 {
+        font-size: medium !important;
+    }
+    .whyHim p {
+        font-size: large !important;
+    } 
+} 
+
+@media screen and (min-width: 200px) and (max-width:1350px){
+    main .shortAbout {
+        display: block;
+        align-content: center;
+        padding: 30px;
+    }
+    main .shortAbout iframe {
+        width: 100% !important;
+    }
+    main .shortAbout .text p {
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width:560px){
+    header {
+        display: block;
+        height: 90px;
+    }
+    main .underTop {
+        height: 110px;
+    }
+    header nav {
+        font-size: smaller;
+        width: 100%;
+        margin-left: -25px !important;
+    }
+    main .pageContent {
+        font-size: x-small !important;
+    }
+}
+/*----------------------------*/
