@@ -87,7 +87,7 @@ main .info p a:hover {
         font-size: x-large !important;
     }
     main .info p {
-        font-size:17px;
+        font-size:17px !important;
     }
 }
 

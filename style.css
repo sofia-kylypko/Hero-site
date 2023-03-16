@@ -34,6 +34,10 @@ a:hover {
     color: #3DF0F5;
 }
 
+a img:hover {
+    margin: -3px;
+    border: 3px solid aqua;
+}
 /*--------------Header--------------*/
 
 header {
@@ -255,12 +259,21 @@ main .authorInfo div p {
     main .authorInfo img {
         height: 500px;
     }
+    main .authorInfo div p {
+        font-size: large !important;
+    }
+    main .authorInfo div h1 {
+        font-size:x-large !important;
+    }
+    main .authorInfo div h2 {
+        font-size:large !important;
+    }
 }
 
 /*--------------VIEW--------------*/
 
 @media screen and (min-width: 200px) and (max-width:750px){
-    header {
+    /* header {
         height: 55px;
     }
     header h1 {
@@ -271,10 +284,25 @@ main .authorInfo div p {
         width: 70%;
         font-size: smaller !important;
         margin: 10px 40px 0 auto !important;
+    } */
+    header {
+        display: block;
+        height: 90px;
+    }
+    header h1 {
+        font-size: 25px !important;
+    }
+    header nav {
+        font-size: smaller;
+        width: 100%;
+        margin-left: -25px !important;
+    }
+    .underTop {
+        height: 90px !important;
     }
     main .pageContent {
         font-size: small !important;
-        margin-top: -20px;
+        margin-top: 5px;
     }
     .whatAbout blockquote {
         font-size: large !important;
@@ -297,6 +325,9 @@ main .authorInfo div p {
     .whyHim p {
         font-size: large !important;
     } 
+    footer p {
+        font-size:10px !important;
+    }
 } 
 
 @media screen and (min-width: 200px) and (max-width:1350px){
@@ -314,18 +345,6 @@ main .authorInfo div p {
 }
 
 @media screen and (max-width:560px){
-    header {
-        display: block;
-        height: 90px;
-    }
-    main .underTop {
-        height: 110px;
-    }
-    header nav {
-        font-size: smaller;
-        width: 100%;
-        margin-left: -25px !important;
-    }
     main .pageContent {
         font-size: x-small !important;
     }

@@ -1,0 +1,65 @@
+span {
+    color: rgb(46, 96, 157);
+}
+p {
+    text-indent: 4rem;
+
+}
+iframe {
+    opacity: 0.8;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: block;
+}
+main h1{
+    color: aliceblue;
+    font-size: 70px;
+    text-align: center;
+}
+main .light {
+    width: 75%;
+    margin: auto;
+    margin-top: 60px;
+    background-color: rgb(235, 250, 255);
+    padding: 15px 70px;
+}
+main .light h1 {
+    font-size: 30px;
+    color: black;
+}
+main .light p {
+    font-size: 20px;
+}
+main .light .history {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+main .light .logo {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/*--------------VIEW--------------*/
+
+@media screen and (min-width: 200px) and (max-width:1350px){
+    iframe {
+       width:60% ;
+       height: 300px;
+    }
+    .history {
+       height: 200px !important;
+    }
+    main h1 {
+       font-size: 40px;
+    }
+    main .light p {
+       font-size: 15px;
+    }
+    main .light {
+        width: 70%;
+    }
+}

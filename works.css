@@ -1,0 +1,58 @@
+header {
+    z-index: 4;
+}
+main .stack{
+    margin: 30px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+}
+
+main section {
+    display: block;
+    background-color: azure;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+main section:hover{
+    border: 3px solid rgb(3, 164, 164);
+}
+
+main section img {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+main section .data {
+    height: 300px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.461);
+    position: relative;
+    z-index: 2;
+    margin: -322px 0 0 0;
+    color: cornsilk;
+    text-align: center;
+}
+
+
+main section img:hover {
+    z-index: 1 ;
+}
+main section .data:hover{
+    z-index: 3;
+} 
+main h2 {
+    color: aliceblue;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 200px) and (max-width:1400px) {
+    main .stack{
+        grid-template-columns: 50% 50%;
+    } 
+}
+
